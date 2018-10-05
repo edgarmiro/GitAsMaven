@@ -12,7 +12,7 @@ BitBucket repository with a `releases` as its main branch, as described in [this
 1. Add the following plugin to the top of the `build.gradle` file in your library folder
 
   ```groovy
-  apply from: 'https://raw.githubusercontent.com/JeroenMols/GitAsMaven/master/publish-bitbucket.gradle'
+  apply from: 'https://raw.githubusercontent.com/edgarmiro/GitAsMaven/master/publish-bitbucket.gradle'
   ```
 
 2. Create a `gradle.properties` file within your library folder with the following parameters:
