@@ -44,5 +44,12 @@ BitBucket repository with a `releases` as its main branch, as described in [this
   ./gradlew uploadArchives
   ```
 
+## Throubleshooting
+I'm guessing your main branch isn't called releases in Bitbucket. The best way to debug is to run the gradle command with the --debug flag, then it prints out the location of the Git repo on your disk.
+
+Then navigate to the repo and see if you can manually pull / commit / push something. You can also delete the local (cached) repository to force Wagon-Git to redownload the repo from BitBucket.
+
+Hope you can figure it out. It's hard for me to give a general fits all solution.
+
 ## Questions
 @molsjeroen
